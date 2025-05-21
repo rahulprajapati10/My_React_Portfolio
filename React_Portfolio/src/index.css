@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css or App.css */
+
+/* Light theme styles */
+body {
+  background-color: #f9fafb; /* Light background */
+  color: #2d2d2d; /* Dark text color */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Dark theme styles */
+body.dark {
+  background-color: #181818; /* Dark background */
+  color: #f5f5f5; /* Light text color */
+}
+
+.text-0 {
+  color: #ff7f50; /* Coral for Graphic Designer */
+}
+
+.text-1 {
+  color: #20b2aa; /* LightSeaGreen for Frontend Developer */
+}
+
+.text-2 {
+  color: #4169e1; /* RoyalBlue for Web Developer */
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skill-icon {
+  animation: float 3s ease-in-out infinite;
+  position: absolute;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 2s infinite;
+}
+
+
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.service-card:hover .overlay {
+  opacity: 0.3;
+}
+
+.service-icon {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1); /* Scale icon on hover */
+}
+
+/* Glowing effect for input fields */
+.glow-input {
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-input:focus {
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Glowing effect for button */
+.glow-button {
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+/* Elegant button styling */
+.elegant-button {
+  position: relative;
+  background: linear-gradient(90deg, rgba(0, 162, 255, 1), rgba(0, 162, 255, 0.7)); /* Gradient background */
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for scale and color */
+}
+
+.elegant-button:hover {
+  transform: scale(1.05) translateY(-2px); /* Scale up and slightly lift on hover */
+  background: linear-gradient(90deg, rgba(0, 162, 255, 0.8), rgba(0, 162, 255, 1)); /* Change gradient on hover */
+}
+/* SideNavBar.css */
+
+/* SideNavBar.css */
+
+/* SideNavbar.css */
+
+/* SideNavbar.css */
+
+/* General styling for the fixed navbar */
+/* SideNavbar.css */
+
+/* General styling for the fixed navbar */
+.sidenavbar {
+  width: 60px; /* Initial width */
+  height: fit; /* Full height */
+  position: fixed; /* Fixed position */
+  right: 0; /* Align to left */
+  top: 50; /* Align to top */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Vertical layout */
+  align-items: center; /* Center items */
+  padding-top: 20px; /* Spacing from the top */
+  transition: width 0.3s ease; /* Smooth transition for width */
+  overflow: hidden; /* Hide overflow */
+ 
+}
+
+/* Flexbox settings */
+.flex {
+  display: flex; /* Use flexbox */
+}
+
+/* Spacing between items */
+.space-y-8 {
+  margin-bottom: 20px; /* Space between items */
+}
+
+/* Cursor settings */
+.cursor-pointer {
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Padding settings */
+.p-3 {
+  padding: 15px; /* Increase padding around items */
+}
+
+/* Rounded settings for items */
+.rounded-lg {
+  border-radius: 8px; /* Rounded corners for items */
+}
+
+/* Text color */
+.text-white {
+  color: white; /* Text color */
+}
+
+/* Margin for spacing between icon and text */
+.ml-2 {
+  margin-left: 10px; /* Spacing between icon and text */
+}
+
+/* Transition settings for text visibility */
+.transition-opacity {
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+/* Add hover effects on items */
+.hover\:scale-110:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* styles.css or Navbar.css */
+/* styles.css or Navbar.css */
+
+/* Base styles for the tilt effect */
+.tilt {
+  display: inline-block; /* Ensure the element behaves properly with transformations */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Keyframes for tilt effect on tap */
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply tilt animation on tap */
+.tilt:active {
+  animation: tilt 0.2s forwards; /* Play the tilt animation when active */
+}
+/* Navbar styles for responsiveness */
+
+/* Ensure the navbar links are hidden on small screens */
+/* Navbar styles for responsiveness */
+
+/* Ensure the navbar links are hidden on small screens */
+@media (max-width: 768px) {
+  .absolute {
+    position: absolute; /* Ensure absolute positioning */
+    top: 100%; /* Align below the navbar */
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    z-index: 50;
+    transition: all 0.3s ease;
+    will-change: transform; /* Bring it above other content */
+  }
+
+  /* Ensure menu items have padding */
+  .py-2 {
+    padding: 0.5rem 1rem; /* Customize padding as needed */
+  }
+  .flex-col {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for the dropdown */
+    align-items: center; /* Center items */
+  }
+
+  .md\\:static {
+    position: static; /* Make static on larger screens */
+  }
+}
+
+/* Ensure proper alignment for larger screens */
+@media (min-width: 768px) {
+  .md\\:items-center {
+    align-items: center; /* Center items in the navbar */
+  }
+
+  .space-x-8 {
+    justify-content: center; /* Center the items */
+  }
+}
